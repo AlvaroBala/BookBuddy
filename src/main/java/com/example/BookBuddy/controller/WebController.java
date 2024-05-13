@@ -8,6 +8,11 @@ public class WebController {
 
     @GetMapping("/")
     public String home() {
-        return "index";  // Serves the index.html template from src/main/resources/templates
+        return "index";
+    }
+    
+    @GetMapping("/myprofile")
+    public String myProfile() {
+        return "myprofile";
     }
 }
